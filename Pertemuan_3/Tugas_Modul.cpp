@@ -27,5 +27,6 @@ int main() {
 
     cout << "\nNilai e = !(c) = " << e << endl;       // Menampilkan output e
 
-    getchar();  // Membaca satu karakter dari keyboard Ini cara sederhana untuk mencegah program langsung tertutup setelah dijalankan di Windows
+    getchar(); // Membaca satu karakter dari keyboard Ini cara sederhana untuk mencegah program langsung tertutup setelah dijalankan di Windows(Dev C++)
 }
+
