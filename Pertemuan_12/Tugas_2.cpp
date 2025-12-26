@@ -5,14 +5,15 @@ using namespace std;
 struct Buku {
     string judul;
     string penulis;
+    string penerbit;
     int tahun;
 };
 
 int main() {
     Buku daftarBuku[3] = {
-        {"All Tomorrows", " C.M. Kösemen", 2006},
-        {"Blood Meridian", "Cormac McCarthy", 1985},
-        {"Azathoth", "H.P Lovecraft", 1938}
+        {"All Tomorrows", " C.M. Kösemen", "Random House", 2006},
+        {"Blood Meridian", "Cormac McCarthy", "Self-published", 1985},
+        {"Azathoth", "H.P Lovecraft", "Arkham House", 1938}
     };
 
     string cariJudul;
@@ -26,13 +27,13 @@ int main() {
             cout << "\nBuku ditemukan!" << endl;
             cout << "Judul   : " << daftarBuku[i].judul << endl;
             cout << "Penulis : " << daftarBuku[i].penulis << endl;
+            cout << "Penerbit: " << daftarBuku[i].penerbit << endl;
             cout << "Tahun   : " << daftarBuku[i].tahun << endl;
             ditemukan = true;
             break;
         }
     }
 
-    // Jika tidak ditemukan
     if (!ditemukan) {
         cout << "\nBuku tidak ditemukan." << endl;
     }
