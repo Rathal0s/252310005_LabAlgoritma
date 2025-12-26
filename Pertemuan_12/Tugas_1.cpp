@@ -1,7 +1,9 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct Mahasiswa {
+    string nama;
     float tugas;
     float praktikum;
     float uts;
@@ -11,6 +13,9 @@ struct Mahasiswa {
 
 int main() {
     Mahasiswa mhs;
+
+    cout << "Masukkan nama mahasiswa: ";
+    getline(cin, mhs.nama);
 
     cout << "Masukkan nilai tugas: ";
     cin >> mhs.tugas;
@@ -26,7 +31,8 @@ int main() {
 
     mhs.rataRata = (mhs.tugas + mhs.praktikum + mhs.uts + mhs.uas) / 4;
 
-    cout << "\nRata-rata nilai: " << mhs.rataRata << endl;
+    cout << "\nNama Mahasiswa : " << mhs.nama << endl;
+    cout << "Rata-rata Nilai: " << mhs.rataRata << endl;
 
     if (mhs.rataRata >= 90) {
         cout << "Nilai: A" << endl;
